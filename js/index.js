@@ -141,11 +141,11 @@ $(document).ready(function () {
     // $(`.slider:nth-child(${cnt})`).css('background-color', '#CD4843');
     $(".third").html(data[now].data[cnt - 1].name);
     $(".fourth").html(data[now].data[cnt - 1].add);
-    $(".img1, .rsimg1").attr('src', data[now].data[0].img);
-    $(".img2, .rsimg2").attr('src', data[now].data[1].img);
-    $(".img3, .rsimg3").attr('src', data[now].data[2].img);
-    $(".img4, .rsimg4").attr('src', data[now].data[3].img);
-    $(".img5, .rsimg5").attr('src', data[now].data[4].img);
+    $(".img1, .rsimg1").attr('src', data[now].data[0].img).attr("alt", data[now].data[0].name);
+    $(".img2, .rsimg2").attr('src', data[now].data[1].img).attr("alt", data[now].data[1].name);
+    $(".img3, .rsimg3").attr('src', data[now].data[2].img).attr("alt", data[now].data[2].name);
+    $(".img4, .rsimg4").attr('src', data[now].data[3].img).attr("alt", data[now].data[3].name);
+    $(".img5, .rsimg5").attr('src', data[now].data[4].img).attr("alt", data[now].data[4].name);
     $(".imgslide").css({marginLeft:'-'+(cnt-1)+'00%'});
     $("#left-arrow").on("click", function () {
         cnt--;
