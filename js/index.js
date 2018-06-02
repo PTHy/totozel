@@ -157,6 +157,7 @@ $(document).ready(function () {
         if (cnt > 5) cnt = 1;
         movement(cnt);
     });
+    customsettimeout();
 });
 
 function customsettimeout(){
