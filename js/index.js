@@ -146,6 +146,7 @@ $(document).ready(function () {
     $(".img3, .rsimg3").attr('src', data[now].data[2].img).attr("alt", data[now].data[2].name);
     $(".img4, .rsimg4").attr('src', data[now].data[3].img).attr("alt", data[now].data[3].name);
     $(".img5, .rsimg5").attr('src', data[now].data[4].img).attr("alt", data[now].data[4].name);
+    getData(data[now].data[0].name);
     $(".imgslide").css({marginLeft:'-'+(cnt-1)+'00%'});
     $("#left-arrow").on("click", function () {
         cnt--;
